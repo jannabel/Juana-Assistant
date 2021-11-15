@@ -71,7 +71,7 @@ def run_juana():
         message = take_command()
         talk("El Destinatario es {0}, El asunto es {1}, El mensaje es {2}" .format(dest, subject, message))
         print("El Destinatario es {0}, El asunto es {1}, El mensaje es {2}".format(dest, subject, message))
-        pywhatkit.send_mail('jannabelramos@gmail.com', 'inteligenciartificial', subject, message, dest)
+        pywhatkit.send_mail('yourmail@gmail.com', 'password', subject, message, dest)
         talk("Mensaje enviado")
     elif 'traduce' in command:
         words = command.replace('traduce', '')
